@@ -1,5 +1,5 @@
 body {
-    background-color: #121212;
+    background-color: black;
     color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -31,7 +31,7 @@ nav a {
 }
 
 .hero {
-    height: 300px;
+    height: 100%;
     background: #444;
     margin: 30px;
     border-radius: 10px;
@@ -46,19 +46,43 @@ nav a {
 
 .main-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 20px;
+    height: 500px;
+    width: 100%;
+    gap: 5px;
+}
+
+.hero-left {
+ background-color: #ffffff;
+ width: 50%;
+ height: 100%;
+ background: gray;
+ text-align: center;
+ line-height: 150px;
+}
+
+.hero-right {
+    background-color: #ffffff;
+    width: 50%;
+    height: 100%;
+    background: gray;
+    text-align: center;
+    line-height: 150px;
 }
 
 .info-section {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    height: 500px;
 }
 
+
 .box {
-    width: 30%;
-    height: 150px;
-    background: #666;
+    width: 33%;
+    height: 100%;
+    background: gray;
     text-align: center;
     line-height: 150px;
     border-radius: 10px;
@@ -71,7 +95,7 @@ footer {
 }
 
 footer a {
-    color: #ffffff;
+    color: gray;
     margin: 0 10px;
     text-decoration: none;
 }
