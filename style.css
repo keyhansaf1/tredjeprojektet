@@ -104,3 +104,9 @@ footer a {
     display: flex;
     justify-content: center;
 }
+
+.Logo {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: larger;
+}
