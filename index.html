@@ -16,7 +16,7 @@
                 <a href="#">Kontakt</a>
                 <a href="hjälp.html">Hjälp</a>
                 <a href="#">Logga in</a>
-                <input type="text" placeholder="Sök..." class="search">
+                <input type="text" placeholder="Sök..." class="search"> <button id="theme-toggle" class="button is-small">Byt Tema</button>
             </nav>
         </div>
         </header>
@@ -46,6 +46,23 @@
             <a href="#">Policy</a>
         </footer>
 
+        <script>
+            const toggleButton = document.getElementById("theme-toggle");
+            const body = document.body;
         
+            if (localStorage.getItem("theme") === "light") {
+                body.classList.add("light-mode");
+            }
+        
+            toggleButton.addEventListener("click", () => {
+                body.classList.toggle("light-mode");
+        
+                if (body.classList.contains("light-mode")) {
+                    localStorage.setItem("theme", "light");
+                } else {
+                    localStorage.setItem("theme", "dark");
+                }
+            });
+        </script>
     </body>
     </html>
